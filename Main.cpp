@@ -2,9 +2,9 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "Blackjack/Blackjack.h"
-#include "State/State.h"
-#include "Helpers/Helpers.h"
+#include "State.h"
+#include "Helpers.h"
+using namespace std;
 
 int main() {
   bool just_starting = true;
