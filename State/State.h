@@ -1,25 +1,24 @@
 #ifndef __State_H__
 #define __State_H__
-#include <iostream>
 #include <fstream>
-#include <cstdlib>
-#include <string>
-using namespace std;
+#include "../Blackjack/Blackjack.h"
 
 class State {
+    Blackjack b1;
 
   public:
 
-    State(istream &is);
+    State(std::istream &is);
 
-    void read_from(istream &is);
+    void read_from(std::istream &is);
 
     ~State();
 
-    void write_to(ostream &os);
+    void write_to(std::ostream &os);
 
-    void update(string input);
+    void update(std::string input);
 
+    int* getDealerCards();
 
 };
 

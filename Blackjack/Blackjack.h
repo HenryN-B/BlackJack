@@ -21,7 +21,7 @@ private:
     int playerCount;
     int playerCards[12] = {0,0,0,0,0,0,0,0,0,0,0,0};
     int dealerCount;
-    int dealerCards[12] = {0,0,0,0,0,0,0,0,0,0,0,0};
+    int* dealerCards[12] = {0,0,0,0,0,0,0,0,0,0,0,0};
     int* deck;
     int playerHitCount;
     int dealerHitCount;
